@@ -1,0 +1,1 @@
+insert into employees (id, name, position) values (employee_sequence.nextval, 'vasya', 'java');
