@@ -12,3 +12,11 @@ Request
 http://localhost:8080/test?name=provider 1' union select 1, User from mysql.user where '1' = '1
 becames
 SELECT id, name FROM providers WHERE name = 'provider 1' UNION SELECT 1, User FROM mysql.user WHERE '1' = '1'
+
+Links:
+jetty run:
+https://mkyong.com/maven/maven-jetty-plugin-examples/
+Spring boot jpa:
+https://examples.javacodegeeks.com/enterprise-java/spring/boot/spring-boot-jpa-mysql-example/
+Connecting mysql in spring jdbc:
+https://www.logicbig.com/tutorials/spring-framework/spring-data-access-with-jdbc/connect-my-sql.html
