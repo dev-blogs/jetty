@@ -20,3 +20,5 @@ Spring boot jpa:
 https://examples.javacodegeeks.com/enterprise-java/spring/boot/spring-boot-jpa-mysql-example/
 Connecting mysql in spring jdbc:
 https://www.logicbig.com/tutorials/spring-framework/spring-data-access-with-jdbc/connect-my-sql.html
+Ariticle about sql injection:
+https://www.javacodegeeks.com/2012/11/sql-injection-in-java-application.html
