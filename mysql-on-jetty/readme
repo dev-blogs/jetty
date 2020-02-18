@@ -1,6 +1,13 @@
 copy settings.xml to .m2
 mvn clean install
+export MAVEN_OPTS="-Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=5005,server=y,suspend=n"
 mvn jetty:run
+
+In eclipse Run->Debug configurations...->Remote Java Application->New
+Project:mysql-on-jetty
+Host:localhost
+Port:5005
+Press Debug
 
 Try this:
 Request
