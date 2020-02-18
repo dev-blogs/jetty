@@ -17,9 +17,10 @@ public class DatabaseConfig {
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://192.168.1.136:3306/warehouse");
-        dataSource.setUsername("");
-        dataSource.setPassword("");
+        //dataSource.setUrl("jdbc:mysql://localhost:3306/phpmyadmin");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/phpmyadmin?useSSL=false");
+        dataSource.setUsername("phpmyadmin");
+        dataSource.setPassword("vsim_22");
         return dataSource;
     }
 	

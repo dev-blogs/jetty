@@ -20,7 +20,7 @@ public class TestServlet implements HttpRequestHandler {
 		
 		String name = request.getParameter("name");
 		
-		String lines = providerDao.findAllByName(name);
+		String lines = providerDao.findAllByNameUsingPrepareStatement(name);
 		
 		response.getWriter().println(lines);
 		//response.getWriter().println("<h1>" + provider.getName() + "</h2>");
